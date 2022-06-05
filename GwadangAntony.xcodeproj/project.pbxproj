@@ -18,6 +18,9 @@
 		11F65B33284CA718006A382E /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B32284CA718006A382E /* UserInfoView.swift */; };
 		11F65B35284CB21F006A382E /* StorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B34284CB21F006A382E /* StorageKeys.swift */; };
 		11F65B37284CB46F006A382E /* UserSugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B36284CB46F006A382E /* UserSugarView.swift */; };
+		11F65B39284CB904006A382E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B38284CB904006A382E /* SettingsView.swift */; };
+		11F65B3B284CB99D006A382E /* ChangUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B3A284CB99D006A382E /* ChangUserInfo.swift */; };
+		11F65B3D284CB9BA006A382E /* ChangeUserSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B3C284CB9BA006A382E /* ChangeUserSugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		11F65B32284CA718006A382E /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo\U0010View.swift"; sourceTree = "<group>"; };
 		11F65B34284CB21F006A382E /* StorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKeys.swift; sourceTree = "<group>"; };
 		11F65B36284CB46F006A382E /* UserSugarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSugarView.swift; sourceTree = "<group>"; };
+		11F65B38284CB904006A382E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		11F65B3A284CB99D006A382E /* ChangUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangUserInfo.swift; sourceTree = "<group>"; };
+		11F65B3C284CB9BA006A382E /* ChangeUserSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserSugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,9 @@
 		11F65B2C284CA2D8006A382E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				11F65B38284CB904006A382E /* SettingsView.swift */,
+				11F65B3A284CB99D006A382E /* ChangUserInfo.swift */,
+				11F65B3C284CB9BA006A382E /* ChangeUserSugar.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -293,12 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F65B39284CB904006A382E /* SettingsView.swift in Sources */,
 				11F65B05284C9D9A006A382E /* ContentView.swift in Sources */,
+				11F65B3B284CB99D006A382E /* ChangUserInfo.swift in Sources */,
 				11F65B33284CA718006A382E /* UserInfoView.swift in Sources */,
 				11F65B37284CB46F006A382E /* UserSugarView.swift in Sources */,
 				11F65B03284C9D9A006A382E /* GwadangAntonyApp.swift in Sources */,
 				11F65B31284CA6B0006A382E /* MainPageView.swift in Sources */,
 				11F65B35284CB21F006A382E /* StorageKeys.swift in Sources */,
+				11F65B3D284CB9BA006A382E /* ChangeUserSugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
