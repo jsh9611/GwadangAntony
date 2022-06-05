@@ -8,5 +8,5 @@
 import SwiftUI
 
 enum StorageKeys: String {
-    case nickName, gender, age, sugar, nowSugar, isFirstLaunching
+    case nickName, gender, age, sugar, todaySugar, isFirstLaunching
 }
