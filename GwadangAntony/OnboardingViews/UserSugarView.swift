@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct UserSugarView: View {
-    
-    @AppStorage(StorageKeys.sugar.rawValue) var sugar : Double = UserDefaults.standard.double(forKey: "sugar")
+    @AppStorage(StorageKeys.sugar.rawValue) private var sugar : Double = UserDefaults.standard.double(forKey: "sugar")
     
     @Binding var isFirstLaunching: Bool
-
+    
     let genderType = ["남성","여성"]
+    
     var body: some View {
         Form {
             VStack {
@@ -21,7 +21,7 @@ struct UserSugarView: View {
                     Slider(value: $sugar, in: 0...100, step: 5.0)
                         .padding()
                 })
-
+                
                 Text("세팅한 설탕은 \(Int(sugar))g 입니다.")
                 Spacer()
                 Button {
@@ -38,6 +38,6 @@ struct UserSugarView: View {
             }
         }
     }
-        
+    
 }
 

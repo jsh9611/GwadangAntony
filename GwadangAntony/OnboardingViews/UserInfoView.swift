@@ -9,9 +9,9 @@ import SwiftUI
 
 struct UserInfoView: View {
     @AppStorage(StorageKeys.nickName.rawValue) private var nickName: String = UserDefaults.standard.string(forKey: "nickName") ?? ""    // 닉네임
-    @AppStorage(StorageKeys.gender.rawValue) var gender: Int = UserDefaults.standard.integer(forKey: "gender") // 유저의 성별(남:0, 여:1)
-    @AppStorage(StorageKeys.age.rawValue) var age: Int =  UserDefaults.standard.integer(forKey: "age") // 유저의 만나이
-    @AppStorage(StorageKeys.sugar.rawValue) var sugar : Double = UserDefaults.standard.double(forKey: "sugar")  // 유저의 설탕값
+    @AppStorage(StorageKeys.gender.rawValue) private var gender: Int = UserDefaults.standard.integer(forKey: "gender") // 유저의 성별(남:0, 여:1)
+    @AppStorage(StorageKeys.age.rawValue) private var age: Int =  UserDefaults.standard.integer(forKey: "age") // 유저의 만나이
+    @AppStorage(StorageKeys.sugar.rawValue) private var sugar : Double = UserDefaults.standard.double(forKey: "sugar")  // 유저의 설탕값
     
     @State private var birthDate : Date = Calendar.current.date(byAdding: DateComponents(year: -1), to: Date()) ?? Date()   // 유저 생일 정보
     
@@ -44,7 +44,7 @@ struct UserInfoView: View {
 //                        }
                         
                     }
-            
+                    
                     // 성별 선택 피커
                     Section(header: Text("성별")){
                         // 남성, 여성 버튼을 피커로 구현
@@ -56,12 +56,12 @@ struct UserInfoView: View {
                         .pickerStyle(SegmentedPickerStyle())
                         
                     }
-
+                    
                     NavigationLink(destination: UserSugarView(isFirstLaunching: $isFirstLaunching)) { Text("다음으로") }
-                    .buttonStyle(PlainButtonStyle())
+                        .buttonStyle(PlainButtonStyle())
                     
                     // 1살 미만인 경우 "다음으로" 버튼을 비활성화 한다.
-                    .disabled(computeAge(from: birthDate, to: Date()) < 0.9)
+                        .disabled(computeAge(from: birthDate, to: Date()) < 0.9)
                 }
             }
         }
@@ -79,7 +79,7 @@ struct UserInfoView: View {
     func computeAge(from fromDate: Date, to toDate: Date) -> Float  {
         // timeIntervalSince: fromDate로 부터 toDate의 시간차이를 초(sec)로 반환한다.
         let birthdaySec = toDate.timeIntervalSince(fromDate)
-
+        
         age = Int((birthdaySec / 31536000))
         
         // 만나이 계산: (현재 날짜 - 생일 날짜) 를 초로 변환한 것을 (초 * 분 * 시간 * 일)로 나누어준다.
@@ -142,7 +142,7 @@ struct UserInfoView: View {
             case 65...74:
                 kcal = 1600
             case 75... :
-                 kcal = 1500
+                kcal = 1500
             default:
                 kcal = 0
             }
