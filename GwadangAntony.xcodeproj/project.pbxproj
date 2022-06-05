@@ -14,6 +14,10 @@
 		11F65B14284C9D9B006A382E /* GwadangAntonyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B13284C9D9B006A382E /* GwadangAntonyTests.swift */; };
 		11F65B1E284C9D9B006A382E /* GwadangAntonyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B1D284C9D9B006A382E /* GwadangAntonyUITests.swift */; };
 		11F65B20284C9D9B006A382E /* GwadangAntonyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B1F284C9D9B006A382E /* GwadangAntonyUITestsLaunchTests.swift */; };
+		11F65B31284CA6B0006A382E /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B30284CA6B0006A382E /* MainPageView.swift */; };
+		11F65B33284CA718006A382E /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B32284CA718006A382E /* UserInfoView.swift */; };
+		11F65B35284CB21F006A382E /* StorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B34284CB21F006A382E /* StorageKeys.swift */; };
+		11F65B37284CB46F006A382E /* UserSugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F65B36284CB46F006A382E /* UserSugarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		11F65B19284C9D9B006A382E /* GwadangAntonyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GwadangAntonyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F65B1D284C9D9B006A382E /* GwadangAntonyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GwadangAntonyUITests.swift; sourceTree = "<group>"; };
 		11F65B1F284C9D9B006A382E /* GwadangAntonyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GwadangAntonyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11F65B30284CA6B0006A382E /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		11F65B32284CA718006A382E /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo\U0010View.swift"; sourceTree = "<group>"; };
+		11F65B34284CB21F006A382E /* StorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKeys.swift; sourceTree = "<group>"; };
+		11F65B36284CB46F006A382E /* UserSugarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSugarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,13 @@
 		11F65B01284C9D9A006A382E /* GwadangAntony */ = {
 			isa = PBXGroup;
 			children = (
+				11F65B2D284CA2E7006A382E /* OnboardingViews */,
+				11F65B2E284CA333006A382E /* Splash */,
+				11F65B2C284CA2D8006A382E /* Settings */,
 				11F65B02284C9D9A006A382E /* GwadangAntonyApp.swift */,
 				11F65B04284C9D9A006A382E /* ContentView.swift */,
+				11F65B30284CA6B0006A382E /* MainPageView.swift */,
+				11F65B34284CB21F006A382E /* StorageKeys.swift */,
 				11F65B06284C9D9B006A382E /* Assets.xcassets */,
 				11F65B08284C9D9B006A382E /* Preview Content */,
 			);
@@ -125,6 +138,29 @@
 				11F65B1F284C9D9B006A382E /* GwadangAntonyUITestsLaunchTests.swift */,
 			);
 			path = GwadangAntonyUITests;
+			sourceTree = "<group>";
+		};
+		11F65B2C284CA2D8006A382E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		11F65B2D284CA2E7006A382E /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				11F65B32284CA718006A382E /* UserInfoView.swift */,
+				11F65B36284CB46F006A382E /* UserSugarView.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
+		11F65B2E284CA333006A382E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F65B05284C9D9A006A382E /* ContentView.swift in Sources */,
+				11F65B33284CA718006A382E /* UserInfoView.swift in Sources */,
+				11F65B37284CB46F006A382E /* UserSugarView.swift in Sources */,
 				11F65B03284C9D9A006A382E /* GwadangAntonyApp.swift in Sources */,
+				11F65B31284CA6B0006A382E /* MainPageView.swift in Sources */,
+				11F65B35284CB21F006A382E /* StorageKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
